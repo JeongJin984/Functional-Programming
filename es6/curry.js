@@ -1,9 +1,8 @@
 const _ = require('./_js')
 
 const curry = f => (a, ..._) => _.length ? f(a, ..._) : (..._) => f(a, ..._)
-
-const mult = curry((a,b) => a*b)
-
+ 
+const mult = curry((a, b) => a * b)
 console.log(mult(3)(2));
 console.log(mult(3,2));
 
@@ -40,9 +39,3 @@ console.log(
 		total_price
 	)
 );
-
-
-
-const a = curry( ()=>{} )
-
-const curry = x => y => z=> f(z)
